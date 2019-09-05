@@ -26,19 +26,23 @@
     </head>
 
     <body>
-        <form class="resource--item form">
-            <div>
-                <h1>
-                    Interested in joining the Westborough Hack Club?
-                </h1>
-                <h2>
-                    Our first meeting is tomorrow, we'll have free pizza,
-                    snacks, & drinks.
-                </h2>
-                <h3>
-                    Enter your info below and we'll put your name on the list +
-                    send a reminder.
-                </h3>
+        <!-- <a href="https://whs.hackclub.com/" target="_blank">
+            <img
+                style="position: absolute; top: 10px; left: 0; border: 0; width: 230px; z-index: 999;"
+                src="images/hackclubAssets/hackclub--flag.svg"
+                alt="Hack Club"
+                data-sal="slide-right"
+                data-sal-duration="800"
+            />
+        </a> -->
+        <div class="centerAll">
+            <div class="resource--item form">
+                <div class="form--heading">
+                        <h1 class="mb0 bold">Interested in joining the Westborough Hack Club?</h1>
+                        <h2 class="mb0">Our first meeting is tomorrow, we'll have free pizza, snacks, & drinks.</h2>
+                        <h3 class="mb3 italic">Enter your info below and we'll put your name on the list + send a reminder.</h3>
+                </div>
+
                 <form>
                     <div class="form__group">
                         <div class="form__group">
@@ -75,11 +79,19 @@
                             <input type="tell" name="phoneNumber" />
                             <label class="form__label">Phone Number</label>
                         </div>
-
-                        <button class="btn">I'll be there! &rarr;</button>
+                        <div class="submit">
+                            <button class="btn">I'll be there! &rarr;</button>
+                        </div>
                     </div>
                 </form>
             </div>
-        </form>
+        </div>
+
+        <script>
+            sal({
+                threshold: 0.1,
+                once: true
+            });
+        </script>
     </body>
 </html>

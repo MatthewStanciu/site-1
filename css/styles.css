@@ -26,7 +26,7 @@
   /* --color--primary: #673AB7;
     --color--primary__dark: #512DA8;
     --color--primary__light: #D1C4E9;
-    --color--accent: #E040FB;  */ 
+    --color--accent: #E040FB;  */
 
   /* ----------
     Primary Cyan with Blue Accent 
@@ -105,7 +105,6 @@ h2 {
   font-size: 2em;
   line-height: 1.5;
   color: var(--color--text__primary);
-  /* margin-bottom: 20px; */
 }
 
 h3 {
@@ -173,10 +172,10 @@ Header
 
 .header {
   background-image: linear-gradient(
-      to right bottom,
-      rgba(228, 45, 66, 1),
-      rgba(228, 115, 45, 1)
-    );
+    to right bottom,
+    rgba(228, 45, 66, 1),
+    rgba(228, 115, 45, 1)
+  );
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
@@ -409,12 +408,54 @@ Content
   cursor: pointer;
 }
 
-.resource--item form .btn{
-  color: black;
-  line-height: 55em;
+.centerAll {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  word-spacing: 0;
-  border: blue 3px solid;
+.form {
+  width: auto;
+}
+
+.form--heading {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.form h1,
+.form h2,
+.form h3,
+.form h4 {
+  line-height: 1;
+}
+
+.form h1 {
+  font-size: 2em;
+  margin-bottom: 0.25em;
+}
+
+.form h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  text-align: left;
+}
+
+.form h3 {
+  color: var(--color--primary__light);
+  font-size: 1.2em;
+}
+
+.form .btn {
+  word-spacing: initial;
+  width: 40%;
+}
+
+.form .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
@@ -459,6 +500,10 @@ Media Queries
     /* width: 20em; */
     width: 100%;
     /* min-width: 20em; */
+  }
+
+  .form {
+    width: 80%;
   }
 }
 
@@ -510,5 +555,9 @@ Media Queries
   .illustration {
     max-height: 100%;
     max-width: auto;
+  }
+
+  .form {
+    width: 90%;
   }
 }
