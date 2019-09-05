@@ -332,10 +332,10 @@ Content
 
 .resource--item {
   background-image: linear-gradient(
-      to right bottom,
-      var(--color--accent),
-      var(--color--primary)
-    );
+    to right bottom,
+    var(--color--accent),
+    var(--color--primary)
+  );
   border-radius: 0.8em;
   width: 48%;
   padding: 2em 1.8em;
@@ -430,10 +430,10 @@ Content
 
 .bg-transparent {
   background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0)
-    );
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0)
+  );
 }
 
 .bg-outline {
@@ -441,8 +441,12 @@ Content
 }
 
 .form--heading {
-  margin-bottom: 1em;
+  margin-bottom: 0;
   text-align: left;
+}
+
+form {
+  margin: 0;
 }
 
 .form h1,
@@ -466,6 +470,8 @@ Content
 .form h3 {
   color: var(--color--primary__light);
   font-size: 1.2em;
+
+  transform: translateY(1em);
 }
 
 .form .btn {
