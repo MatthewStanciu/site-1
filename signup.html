@@ -12,7 +12,10 @@
       integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="js/form.js" defer></script>
+    <script src="js/background.js" defer></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/png" href="images/whs--logo.png" />
@@ -21,7 +24,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body>
+  <body class="gradient">
     <!-- <a href="https://whs.hackclub.com/" target="_blank">
             <img
                 style="position: absolute; top: 10px; left: 0; border: 0; width: 230px; z-index: 999;"
@@ -80,7 +83,12 @@
             </div>
 
             <div class="form__group">
-              <input type="tell" name="phoneNumber" class="form__input" placeholder="(508) 937-0110"/>
+              <input
+                type="tell"
+                name="phoneNumber"
+                class="form__input"
+                placeholder="(508) 937-0110"
+              />
               <label class="form__label">Phone Number</label>
             </div>
             <div class="submit">

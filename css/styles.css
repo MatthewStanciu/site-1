@@ -166,6 +166,15 @@ hr {
   font-weight: 600;
 }
 
+.gradient
+{
+  width: 100%;
+  height: 800px;
+  padding: 0px;
+  margin: 0px;
+  z-index: -1;
+}
+
 /* ----------
 Header
 ---------- */
