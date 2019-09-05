@@ -166,6 +166,16 @@ hr {
   font-weight: 600;
 }
 
+.bg-gradient {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(228, 45, 66, 1),
+    rgba(228, 115, 45, 1)
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 /* ----------
 Header
 ---------- */
@@ -325,8 +335,7 @@ Content
       to right bottom,
       var(--color--accent),
       var(--color--primary)
-    ),
-    url();
+    );
   border-radius: 0.8em;
   width: 48%;
   padding: 2em 1.8em;
@@ -417,6 +426,18 @@ Content
 
 .form {
   width: auto;
+}
+
+.bg-transparent {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    );
+}
+
+.bg-outline {
+  border: 3px solid white;
 }
 
 .form--heading {
