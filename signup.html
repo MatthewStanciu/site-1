@@ -1,69 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/basscss/8.1.0/css/basscss.min.css"
-      integrity="sha256-61pD9NnYfWFhrgxYQqwoQVsCcAF5/mUNdoBn14gnA0I="
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"
-      integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/form.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="images/whs--logo.png" />
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/basscss/8.1.0/css/basscss.min.css"
+            integrity="sha256-61pD9NnYfWFhrgxYQqwoQVsCcAF5/mUNdoBn14gnA0I="
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"
+            integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs="
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/form.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="images/whs--logo.png"
+        />
 
-    <link rel="stylesheet" href="css/sal.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-       <form>
-          <div>
-            <h1>
-              Interested in joining the Westborough Hack Club?
-            </h1>
-            <h2>
-              Our first meeting is tomorrow, we'll have free pizza, snacks, &
-              drinks.
-            </h2>
-            <h3>
-              Enter your info below and we'll put your name on the list + send a
-              reminder.
-            </h3>
-            <form>
-              <div class="field-grid">
-                <div class="field">
-                  <p>First Name</p>
-                  <input name="firstName" type="text" placeholder="Bob" />
-                </div>
+        <link rel="stylesheet" href="css/sal.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
 
-                <div class="form__group">
-                        <input
-                          name="lastName"
-                          type="text"
-                          class="form__input"
-                          placeholder="Smith"
-                        />
-                        <label class="form__label">Lsat Name</label>
-                      </div>
-                      <div class="form__group">
-                        <input
-                          type="text"
-                          name="email"
-                          class="form__input"
-                          placeholder="smithbob22@student.westboroughk12.org"
-                        />
-                        <label class="form__label">Email</label>
-                      </div>
-                      <div class="form__group">
-                        <input type="tell" name="phoneNumber" placeholder="508-456-7890" />
-                        <label class="form__label">Phone Number</label><button class="btn">I'll be there!</button>
+    <body>
+        <form class="resource--item form">
+            <div>
+                <h1>
+                    Interested in joining the Westborough Hack Club?
+                </h1>
+                <h2>
+                    Our first meeting is tomorrow, we'll have free pizza,
+                    snacks, & drinks.
+                </h2>
+                <h3>
+                    Enter your info below and we'll put your name on the list +
+                    send a reminder.
+                </h3>
+                <form>
+                    <div class="form__group">
+                        <div class="form__group">
+                            <input
+                                name="firstName"
+                                type="text"
+                                class="form__input"
+                                placeholder="Bob"
+                            />
+                            <label class="form__label">First Name</label>
                         </div>
+
+                        <div class="form__group">
+                            <input
+                                name="lastName"
+                                type="text"
+                                class="form__input"
+                                placeholder="Smith"
+                            />
+                            <label class="form__label">Last Name</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input
+                                type="text"
+                                name="email"
+                                class="form__input"
+                                placeholder="smithbob23@student.westboroughk12.org"
+                            />
+                            <label class="form__label">Email</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="tell" name="phoneNumber" />
+                            <label class="form__label">Phone Number</label>
+                        </div>
+
+                        <button class="btn">I'll be there! &rarr;</button>
                     </div>
-                  </form>
-                </body>
-              </html>
+                </form>
+            </div>
+        </form>
+    </body>
+</html>

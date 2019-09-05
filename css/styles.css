@@ -367,7 +367,7 @@ Content
 }
 
 .form__input::-webkit-input-placeholder {
-  color: var(--color--text);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .form__label {
@@ -378,7 +378,7 @@ Content
   margin-bottom: 0.5em;
   display: block;
   transition: all 0.3s;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color--text);
 }
 
 .form__input:placeholder-shown + .form__label {
@@ -407,6 +407,14 @@ Content
 
 .btn:hover {
   cursor: pointer;
+}
+
+.resource--item form .btn{
+  color: black;
+  line-height: 55em;
+
+  word-spacing: 0;
+  border: blue 3px solid;
 }
 
 .footer {
