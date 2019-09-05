@@ -375,7 +375,7 @@ Content
 }
 
 .form__input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .form__label {
@@ -393,10 +393,6 @@ Content
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem);
-}
-
-.form .form__input {
-  border-bottom: 3px solid var(--color--text__primary);
 }
 
 .btn {
@@ -440,14 +436,6 @@ Content
     );
 }
 
-.bg-opaque {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.25),
-      rgba(255, 255, 255, 0.25)
-    );
-}
-
 .bg-outline {
   border: 3px solid white;
 }
@@ -462,7 +450,6 @@ Content
 .form h3,
 .form h4 {
   line-height: 1;
-  color: var(--color--text__primary)
 }
 
 .form h1 {
@@ -477,7 +464,7 @@ Content
 }
 
 .form h3 {
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--color--primary__light);
   font-size: 1.2em;
 }
 
@@ -486,25 +473,10 @@ Content
   width: 40%;
 }
 
-.form .form__group,
-.form form__input::-webkit-input-placeholder,
-.form .form__label {
-  color: var(--color--text__primary);
-}
-
-.form__input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.8);
-}
-
 .form .submit {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.form .btn {
-  color: var(--color--text__primary);
-  border-color: var(--color--text__primary);
 }
 
 .footer {
